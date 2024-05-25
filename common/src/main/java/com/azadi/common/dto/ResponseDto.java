@@ -1,4 +1,4 @@
-package com.haraji.common.dto;
+package com.azadi.common.dto;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 

@@ -1,7 +1,8 @@
-package com.haraji.common.dto;
+package com.azadi.common.dto;
 
 import io.swagger.annotations.ApiModelProperty;
 import lombok.*;
+
 
 import java.io.Serializable;
 

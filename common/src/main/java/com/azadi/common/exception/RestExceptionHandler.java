@@ -1,7 +1,8 @@
-package com.haraji.common.exception;
+package com.azadi.common.exception;
 
 
 
+import org.springframework.context.support.DefaultMessageSourceResolvable;
 import org.springframework.core.Ordered;
 import org.springframework.core.annotation.Order;
 import org.springframework.http.HttpHeaders;
@@ -49,7 +50,7 @@ public class RestExceptionHandler extends ResponseEntityExceptionHandler {
         List<String> errors = ex.getBindingResult()
                 .getFieldErrors()
                 .stream()
-                .map(x -> x.getDefaultMessage())
+                .map(DefaultMessageSourceResolvable::getDefaultMessage)
                 .collect(Collectors.toList());
 
         body.put("errors", errors);

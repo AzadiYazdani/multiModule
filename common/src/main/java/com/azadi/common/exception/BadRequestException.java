@@ -1,4 +1,4 @@
-package com.haraji.common.exception;
+package com.azadi.common.exception;
 
 public class BadRequestException extends BaseException {
 
