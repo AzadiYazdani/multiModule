@@ -1,7 +1,8 @@
-package com.azadi.multimodule;
+package com.azadi.main;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+
 
 @SpringBootTest
 class MultiModuleApplicationTests {

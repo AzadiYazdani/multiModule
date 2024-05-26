@@ -5,12 +5,12 @@ server:
 
 spring:
   application:
-    name: haraji
+    name: multi-module
   profiles:
     active: dev
   jpa:
     hibernate:
-      ddl-auto: update
+      ddl-auto: none
 
   datasource:
     url: jdbc:mysql://localhost:3306/sale_db
@@ -18,34 +18,34 @@ spring:
     password: S@Idaza1
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-security:
-  oauth2:
-    token-uri: jdbc:mysql://localhost:3306/sale_db
+#security:
+#  oauth2:
+#    token-uri: jdbc:mysql://localhost:3306/sale_db
 
-jwt:
-  timeout: 10
-  secret: asdfSFS34wfsdfsdfSDSD32dfsddDDerQSNCK34SOWEK5354fdgdf4
-  token-string:
-    username: username
-    password: password
-    header: Authorization
-    prefix: Bearer
+#jwt:
+#  timeout: 10
+#  secret: asdfSFS34wfsdfsdfSDSD32dfsddDDerQSNCK34SOWEK5354fdgdf4
+#  token-string:
+#    username: username
+#    password: password
+#    header: Authorization
+#    prefix: Bearer
 
 
-ldap:
-  url: ldap://DC-th01.TLS.IR
-  port: 389
-  directory:
-    root: dc=TSL,dc=ir
-  domain: TLS
-  user:
-    base: ou=persons,ou=people,ou=users
-    filter: uid={0}
-  group:
-    base: ou=persons,ou=people,ou=users,dc=TSL,dc=ir
-  factory: com.sun.jndi.ldap.LdapCtxFactory
-  security:
-    authentication: simple
+#ldap:
+#  url: ldap://DC-th01.TLS.IR
+#  port: 389
+#  directory:
+#    root: dc=TSL,dc=ir
+#  domain: TLS
+#  user:
+#    base: ou=persons,ou=people,ou=users
+#    filter: uid={0}
+#  group:
+#    base: ou=persons,ou=people,ou=users,dc=TSL,dc=ir
+#  factory: com.sun.jndi.ldap.LdapCtxFactory
+#  security:
+#    authentication: simple
 
 #Swagger: API documentation
 swagger:
