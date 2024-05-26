@@ -11,9 +11,6 @@
 
     <artifactId>main</artifactId>
     <packaging>jar</packaging>
-    <properties>
-        <maven.assembly.plugin.version>2.4</maven.assembly.plugin.version>
-    </properties>
 
     <dependencies>
 
@@ -49,12 +46,6 @@
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
             <scope>runtime</scope>
-        </dependency>
-
-        <!--security...-->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-security</artifactId>
         </dependency>
 
         <!--JWT...-->

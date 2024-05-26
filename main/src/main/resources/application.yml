@@ -50,8 +50,8 @@ spring:
 #Swagger: API documentation
 swagger:
   api:
-    title: General haraji services @${spring.profiles.active}
-    description: General haraji REST Services API Documentation
+    title: General services @${spring.profiles.active}
+    description: General REST Services API Documentation
     version: 1
     api-docs-path: /v2/api-docs
   enabled: true
