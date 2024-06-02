@@ -31,8 +31,8 @@ public class CryptoController {
 
     @GetMapping(value = "/calculate?")
     @ApiOperation(value = "قیمت لازم خرید", produces = MediaType.APPLICATION_JSON_VALUE)
-    public ResponseEntity<ResponseDto<Double>> getAllBusinessTypes(@RequestParam("amount") @Valid @NotNull double amount,@RequestParam("price") @Valid @NotNull double price,@RequestParam("wage") @Valid @NotNull double wage) {
-        Double result = cryptoService.calculate(amount , price, wage);
+    public ResponseEntity<ResponseDto<Double>> getAllBusinessTypes(@RequestParam("amount") @Valid @NotNull double amount, @RequestParam("price") @Valid @NotNull double price, @RequestParam("wage") @Valid @NotNull double wage) {
+        Double result = cryptoService.calculate(amount, price, wage);
 //               log.debug("the BusinessTypeDto for sending is {}", lstDtoResponse);
         return new ResponseEntity<ResponseDto<Double>>(ResponseDto.success(result), HttpStatus.OK);
     }
