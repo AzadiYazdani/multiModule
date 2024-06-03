@@ -5,6 +5,7 @@ import com.azadi.crypto.service.CryptoService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
+import org.mapstruct.Qualifier;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -22,6 +23,7 @@ import javax.validation.constraints.NotNull;
 @Api(value = "token operations")
 @Slf4j
 public class CryptoController {
+
 
     private final CryptoService cryptoService;
 

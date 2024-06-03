@@ -1,6 +1,8 @@
 package com.azadi.crypto.service;
 
+import org.springframework.stereotype.Component;
 
+@Component
 public class CryptoServiceImpl implements CryptoService {
 
     @Override

@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: multi-module
+    name: multiModule
   profiles:
     active: dev
   jpa:
