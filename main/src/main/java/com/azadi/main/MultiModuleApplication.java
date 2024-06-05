@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.crypto"})
-@ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.crypto"})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.crypto", "com.azadi.main"})
+@ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.crypto", "com.azadi.main"})
 @Slf4j
 public class MultiModuleApplication {
 
