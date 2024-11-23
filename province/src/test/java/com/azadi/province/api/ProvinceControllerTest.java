@@ -1,4 +1,4 @@
-package com.azadi.crypto.api;
+package com.azadi.province.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -6,9 +6,9 @@ import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMock
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.web.servlet.MockMvc;
 
-@SpringBootTest(classes = CryptoController.class)
+@SpringBootTest(classes = ProvinceController.class)
 @AutoConfigureMockMvc
-public class CryptoControllerTest {
+public class ProvinceControllerTest {
 
     @Autowired
     MockMvc mockMvc;
@@ -17,7 +17,7 @@ public class CryptoControllerTest {
     @Test
     public void getAllBusinessTypes() {
 //        MvcResult requestResult =
-//                mockMvc.perform(get("/crypto/calculate?amount=120&price=4&wage=5")
+//                mockMvc.perform(get("/province/calculate?amount=120&price=4&wage=5")
 //
 //                                        .contentType(MediaType.APPLICATION_JSON)
 //                                        .accept(MediaType.APPLICATION_JSON)

@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: multiModule
+    name: APICache
   profiles:
     active: dev
   jpa:

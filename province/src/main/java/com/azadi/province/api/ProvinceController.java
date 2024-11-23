@@ -1,7 +1,7 @@
-package com.azadi.crypto.api;
+package com.azadi.province.api;
 
 import com.azadi.common.dto.ResponseDto;
-import com.azadi.crypto.service.CryptoService;
+import com.azadi.province.service.ProvinceService;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import lombok.extern.slf4j.Slf4j;
@@ -18,22 +18,22 @@ import javax.validation.constraints.NotNull;
 
 
 @RestController
-@RequestMapping("/crypto")
+@RequestMapping("/province")
 @Api(value = "token operations")
 @Slf4j
-public class CryptoController {
+public class ProvinceController {
 
 
-    private final CryptoService cryptoService;
+    private final ProvinceService provinceService;
 
-    public CryptoController(CryptoService cryptoService) {
-        this.cryptoService = cryptoService;
+    public ProvinceController(ProvinceService provinceService) {
+        this.provinceService = provinceService;
     }
 
     @GetMapping(value = "/calculate")
     @ApiOperation(value = "قیمت لازم خرید", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<ResponseDto<Double>> getAllBusinessTypes(@RequestParam("amount") @Valid @NotNull double amount, @RequestParam("price") @Valid @NotNull double price, @RequestParam("wage") @Valid @NotNull double wage) {
-        Double result = cryptoService.calculate(amount, price, wage);
+        Double result = provinceService.calculate(amount, price, wage);
 //               log.debug("the BusinessTypeDto for sending is {}", lstDtoResponse);
         return new ResponseEntity<ResponseDto<Double>>(ResponseDto.success(result), HttpStatus.OK);
     }

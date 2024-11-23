@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: multi-module
+    name: API-Cache
   profiles:
     active: dev
   jpa:

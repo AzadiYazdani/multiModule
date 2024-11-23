@@ -5,7 +5,7 @@ server:
 
 spring:
   application:
-    name: multiModule
+    name: APICache
   profiles:
     active: dev
   jpa:
@@ -17,7 +17,6 @@ spring:
     username: sale_user
     password: S@Idaza1
     driver-class-name: com.mysql.cj.jdbc.Driver
-
 #security:
 #  oauth2:
 #    token-uri: jdbc:mysql://localhost:3306/sale_db

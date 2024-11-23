@@ -5,7 +5,7 @@
     <packaging>pom</packaging>
     <modules>
         <module>main</module>
-        <module>crypto</module>
+        <module>province</module>
         <module>common</module>
     </modules>
     <parent>
@@ -15,10 +15,10 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.azadi</groupId>
-    <artifactId>multiModule</artifactId>
+    <artifactId>apiCache</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>multiModule</name>
-    <description>multiModule</description>
+    <name>API_Cache</name>
+    <description>API_Cache</description>
     <properties>
         <java.version>1.8</java.version>
         <org.projectlombok.version>1.18.12</org.projectlombok.version>

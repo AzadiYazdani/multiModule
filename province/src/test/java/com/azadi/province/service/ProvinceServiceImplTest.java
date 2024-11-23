@@ -1,17 +1,17 @@
-package com.azadi.crypto.service;
+package com.azadi.province.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class CryptoServiceImplTest {
+class ProvinceServiceImplTest {
 
     @Autowired
-    CryptoService cryptoService;
+    ProvinceService provinceService;
 
     @Test
     void calculate() {
-        System.out.println("result" + cryptoService.calculate(12, 12, 13));
+        System.out.println("result" + provinceService.calculate(12, 12, 13));
     }
 }

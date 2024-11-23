@@ -1,9 +1,9 @@
-package com.azadi.crypto.service;
+package com.azadi.province.service;
 
 import org.springframework.stereotype.Component;
 
 @Component
-public class CryptoServiceImpl implements CryptoService {
+public class ProvinceServiceImpl implements ProvinceService {
 
     @Override
     public Double calculate(double number, double price, double wage) {

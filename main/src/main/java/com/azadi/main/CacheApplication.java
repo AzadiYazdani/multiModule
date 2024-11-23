@@ -8,10 +8,10 @@ import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.ConfigurableApplicationContext;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.crypto", "com.azadi.main"})
-@ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.crypto", "com.azadi.main"})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main"})
+@ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main"})
 @Slf4j
-public class MultiModuleApplication {
+public class CacheApplication {
 
     private static String serverPortNumber;
 
@@ -24,7 +24,7 @@ public class MultiModuleApplication {
 
         log.info("Application Starting...");
 
-        SpringApplication application = new SpringApplication(MultiModuleApplication.class);
+        SpringApplication application = new SpringApplication(CacheApplication.class);
         ConfigurableApplicationContext ctx = application.run(args);
         ctx.registerShutdownHook();
         log.info("Application started on http://localhost:" + serverPortNumber + "/swagger-ui/");

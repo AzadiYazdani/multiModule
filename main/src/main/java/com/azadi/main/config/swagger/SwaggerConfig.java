@@ -56,7 +56,7 @@ public class SwaggerConfig {
                 .apiInfo(apiInfo())
 //                .globalOperationParameters(parameterBuildersList)
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.azadi.crypto"))
+                .apis(RequestHandlerSelectors.basePackage("com.azadi.province"))
                 .paths(PathSelectors.any())
                 .build()
 //                .directModelSubstitute(LocalDate.class, String.class)
