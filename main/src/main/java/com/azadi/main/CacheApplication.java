@@ -3,13 +3,18 @@ package com.azadi.main;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.domain.EntityScan;
 import org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration;
 import org.springframework.boot.context.properties.ConfigurationPropertiesScan;
 import org.springframework.context.ConfigurableApplicationContext;
+import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
-@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main"})
-@ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main"})
+@SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main", "com.azadi.province.db"})
+@ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main", "com.azadi.province.db"})
+@EnableJpaRepositories("com.azadi.province.db")
+@EntityScan("com.azadi.province.db")
 @Slf4j
 public class CacheApplication {
 
