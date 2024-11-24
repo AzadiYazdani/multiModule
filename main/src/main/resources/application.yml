@@ -18,11 +18,6 @@ spring:
     password: User@Cache123
     driver-class-name: com.mysql.cj.jdbc.Driver
 
-#security:
-#  oauth2:
-#    token-uri: jdbc:mysql://localhost:3306/cache_schema
-
-
 #Swagger: API documentation
 swagger:
   api:
