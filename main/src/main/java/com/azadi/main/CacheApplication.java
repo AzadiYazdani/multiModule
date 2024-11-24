@@ -13,7 +13,7 @@ import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication(exclude = {DataSourceAutoConfiguration.class}, scanBasePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main", "com.azadi.province.db"})
 @ConfigurationPropertiesScan(basePackages = {"com.azadi.common", "com.azadi.province", "com.azadi.main", "com.azadi.province.db"})
-@EnableJpaRepositories("com.azadi.province.db")
+//@EnableJpaRepositories("com.azadi.province.db")
 @EntityScan("com.azadi.province.db")
 @Slf4j
 public class CacheApplication {
