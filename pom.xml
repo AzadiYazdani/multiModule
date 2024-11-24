@@ -21,7 +21,7 @@
     <description>API_Cache</description>
     <properties>
         <java.version>1.8</java.version>
-        <org.projectlombok.version>1.18.12</org.projectlombok.version>
+        <org.projectlombok.version>1.18.22</org.projectlombok.version>
         <org.mapstruct.version>1.4.2.Final</org.mapstruct.version>
         <mapstruct-lombok.version>0.2.0</mapstruct-lombok.version>
         <spring-boot.version>2.2.7.RELEASE</spring-boot.version>
